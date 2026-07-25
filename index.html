@@ -1198,7 +1198,13 @@ method="POST">
             closeMsgBtn.addEventListener('click', hideMessage);
 
             // Handle Forms
-            document.getElementById('contactForm').addEventListener('submit', function(e){
+            const contactForm = document.getElementById('contactForm');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        // kode form kamu di sini
+    });
+}
                 e.preventDefault();
                 showMessage('Pesan Terkirim', 'Terima kasih. Tim kami akan segera menghubungi Anda.');
                 e.target.reset();

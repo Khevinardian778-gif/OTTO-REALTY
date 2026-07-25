@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Otto Realty | Perusahaan Pemasaran Properti Terpercaya</title>
+    <meta name="title" content="Otto Realty | Perusahaan Pemasaran Properti Terpercaya">
+    <meta name="description" content="Otto Realty adalah perusahaan pemasaran properti profesional yang membantu Anda menemukan rumah, apartemen, ruko, tanah, villa, dan investasi properti terbaik di Indonesia.">
+    <meta name="keywords" content="properti mewah, jual rumah, beli apartemen, investasi properti, agen properti indonesia, otto realty">
+    <meta name="author" content="Otto Realty">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ottorealty.co.id/">
+    <meta property="og:title" content="Otto Realty | Perusahaan Pemasaran Properti Terpercaya">
+    <meta property="og:description" content="Otto Realty adalah perusahaan pemasaran properti profesional yang membantu Anda menemukan rumah, apartemen, ruko, tanah, villa, dan investasi properti terbaik di Indonesia.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.ottorealty.co.id/">
+    <meta property="twitter:title" content="Otto Realty | Perusahaan Pemasaran Properti Terpercaya">
+    <meta property="twitter:description" content="Otto Realty adalah perusahaan pemasaran properti profesional yang membantu Anda menemukan rumah, apartemen, ruko, tanah, villa, dan investasi properti terbaik di Indonesia.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Canonical & Favicon (Placeholder) -->
+    <link rel="canonical" href="https://www.ottorealty.co.id/">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏢</text></svg>">
+
+    <!-- Schema.org for Local Business / Real Estate Agent -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "Otto Realty",
+      "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      "@id": "",
+      "url": "https://www.ottorealty.co.id/",
+      "telephone": "+6281234567890",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jl. Sudirman No. 1",
+        "addressLocality": "Jakarta Selatan",
+        "postalCode": "12190",
+        "addressCountry": "ID"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -6.225014,
+        "longitude": 106.804001
+      },
+      "priceRange": "$$$$"
+    }
+    </script>
+
+    <!-- Google Fonts: Playfair Display (Serif) & Inter (Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            black: '#111111',
+                            white: '#FFFFFF',
+                            gold: '#C8A45D',
+                            goldhover: '#b39048',
+                            gray: '#F5F5F5',
+                            darkbg: '#1a1a1a',
+                            lightborder: 'rgba(255, 255, 255, 0.1)',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    boxShadow: {
+                        'premium': '0 10px 40px -10px rgba(0,0,0,0.08)',
+                        'gold': '0 4px 14px 0 rgba(200, 164, 93, 0.39)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Base styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFFFFF;
+            color: #111111;
+            overflow-x: hidden;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6, .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Glassmorphism utility */
+        .glass {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .dark .glass {
+            background: rgba(17, 17, 17, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .glass-dark {
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Hero Image Zoom Animation */
+        .hero-bg-zoom {
+            animation: kenburns 20s infinite alternate ease-in-out;
+        }
+        @keyframes kenburns {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+
+        /* Scroll Animations Initial States */
+        .reveal-up {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+        }
+        .reveal-left {
+            opacity: 0;
+            transform: translateX(-40px);
+            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+        }
+        .reveal-right {
+            opacity: 0;
+            transform: translateX(40px);
+            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+        }
+        .reveal-fade {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        
+        /* Active class added by JS */
+        .reveal-up.active, .reveal-left.active, .reveal-right.active {
+            opacity: 1;
+            transform: translate(0);
+        }
+        .reveal-fade.active {
+            opacity: 1;
+        }
+
+        /* Staggered delay classes */
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+        .delay-400 { transition-delay: 400ms; }
+        .delay-500 { transition-delay: 500ms; }
+
+        /* Loader */
+        #loader {
+            position: fixed;
+            inset: 0;
+            background-color: #111111;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.5s ease;
+        }
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid rgba(200, 164, 93, 0.3);
+            border-radius: 50%;
+            border-top-color: #C8A45D;
+            animation: spin 1s ease-in-out infinite;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Swiper custom pagination */
+        .swiper-pagination-bullet {
+            background: #C8A45D !important;
+        }
+        
+        /* Map container */
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            border-radius: 0.5rem;
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        .dark ::-webkit-scrollbar-track {
+            background: #1a1a1a; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #C8A45D; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #b39048; 
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-gold selection:text-white dark:bg-brand-black dark:text-gray-200 transition-colors duration-300">
+
+    <!-- Loader -->
+    <div id="loader">
+        <div class="flex flex-col items-center">
+            <div class="spinner mb-4"></div>
+            <div class="font-serif text-brand-gold text-xl tracking-widest uppercase">Otto Realty</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-500 py-4">
+        <div class="container mx-auto px-4 md:px-8 max-w-7xl flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-2 text-white group">
+                <span class="text-3xl"><i class="fa-solid fa-building-user text-brand-gold"></i></span>
+                <span class="font-serif text-2xl font-bold tracking-wider group-hover:text-brand-gold transition-colors">OTTO</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center gap-8 text-white text-sm font-medium">
+                <a href="#home" class="hover:text-brand-gold transition-colors relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-brand-gold after:transition-all hover:after:w-full">Beranda</a>
+                <a href="#about" class="hover:text-brand-gold transition-colors relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-brand-gold after:transition-all hover:after:w-full">Tentang Kami</a>
+                <a href="#properties" class="hover:text-brand-gold transition-colors relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-brand-gold after:transition-all hover:after:w-full">Properti</a>
+                
+                <!-- Simple Dropdown for Services -->
+                <div class="relative group">
+                    <a href="#services" class="hover:text-brand-gold transition-colors flex items-center gap-1">Layanan <i class="fa-solid fa-chevron-down text-xs"></i></a>
+                    <div class="absolute top-full left-0 mt-4 w-48 bg-white dark:bg-brand-black rounded-xl shadow-xl border border-gray-100 dark:border-brand-lightborder opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 flex flex-col py-2 overflow-hidden">
+                        <a href="#" class="px-4 py-2 text-brand-black dark:text-gray-300 hover:bg-brand-gray dark:hover:bg-brand-darkbg hover:text-brand-gold transition-colors">Jual Properti</a>
+                        <a href="#" class="px-4 py-2 text-brand-black dark:text-gray-300 hover:bg-brand-gray dark:hover:bg-brand-darkbg hover:text-brand-gold transition-colors">Beli Properti</a>
+                        <a href="#" class="px-4 py-2 text-brand-black dark:text-gray-300 hover:bg-brand-gray dark:hover:bg-brand-darkbg hover:text-brand-gold transition-colors">Investasi</a>
+                    </div>
+                </div>
+                
+                <a href="#contact" class="hover:text-brand-gold transition-colors relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-brand-gold after:transition-all hover:after:w-full">Kontak</a>
+            </div>
+
+            <!-- CTA & Theme Toggle -->
+            <div class="hidden lg:flex items-center gap-4">
+                <button id="theme-toggle" class="text-white hover:text-brand-gold transition-colors w-10 h-10 rounded-full bg-white/10 flex items-center justify-center backdrop-blur-sm border border-white/20">
+                    <i class="fa-solid fa-moon dark:hidden"></i>
+                    <i class="fa-solid fa-sun hidden dark:block"></i>
+                </button>
+                <a href="#contact" class="bg-brand-gold hover:bg-brand-goldhover text-white px-6 py-2.5 rounded-full transition-all shadow-gold font-medium">
+                    Hubungi Konsultan
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="lg:hidden text-white text-2xl p-2 focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="fixed inset-0 bg-brand-black/95 backdrop-blur-lg transform translate-x-full transition-transform duration-300 z-40 lg:hidden flex flex-col justify-center items-center gap-8 text-white text-xl font-serif">
+            <button id="close-menu-btn" class="absolute top-6 right-6 text-3xl hover:text-brand-gold transition-colors">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <a href="#home" class="mobile-link hover:text-brand-gold transition-colors">Beranda</a>
+            <a href="#about" class="mobile-link hover:text-brand-gold transition-colors">Tentang Kami</a>
+            <a href="#properties" class="mobile-link hover:text-brand-gold transition-colors">Properti</a>
+            <a href="#services" class="mobile-link hover:text-brand-gold transition-colors">Layanan</a>
+            <a href="#contact" class="mobile-link hover:text-brand-gold transition-colors">Kontak</a>
+            <div class="flex gap-4 mt-4">
+                <button id="mobile-theme-toggle" class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-brand-gold hover:border-transparent transition-all">
+                    <i class="fa-solid fa-circle-half-stroke"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen min-h-[650px] flex items-center justify-center overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Luxury Home" class="w-full h-full object-cover hero-bg-zoom" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/80"></div>
+        </div>
+
+        <div class="container mx-auto px-4 z-10 text-center text-white mt-16 md:mt-0">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 reveal-up leading-tight">
+                Mewujudkan <span class="text-brand-gold italic">Properti Impian</span> Anda
+            </h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto mb-10 text-gray-200 reveal-up delay-100 font-light">
+                Kami membantu Anda menemukan rumah, apartemen, ruko, dan investasi properti terbaik dengan proses yang aman, cepat, dan terpercaya.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center reveal-up delay-200">
+                <a href="#properties" class="w-full sm:w-auto bg-brand-gold hover:bg-brand-goldhover text-white px-8 py-3.5 rounded-full transition-all shadow-gold font-medium">
+                    Lihat Properti
+                </a>
+                <a href="#contact" class="w-full sm:w-auto bg-transparent border-2 border-white hover:bg-white hover:text-brand-black px-8 py-3.5 rounded-full transition-all font-medium">
+                    Hubungi Konsultan
+                </a>
+            </div>
+        </div>
+
+        <!-- Property Search Filter (Glassmorphism) -->
+        <div class="absolute bottom-0 left-0 w-full z-20 transform translate-y-1/2 px-4 md:px-8 hidden md:block">
+            <div class="container mx-auto max-w-5xl">
+                <div class="glass-dark rounded-2xl p-6 shadow-2xl reveal-up delay-300">
+                    <form class="grid grid-cols-1 md:grid-cols-4 gap-4 items-end" onsubmit="event.preventDefault(); window.location.hash='#properties';">
+                        <div class="flex flex-col">
+                            <label class="text-gray-300 text-xs mb-2 uppercase tracking-wider font-semibold">Lokasi</label>
+                            <div class="relative">
+                                <i class="fa-solid fa-location-dot absolute left-3 top-1/2 -translate-y-1/2 text-brand-gold"></i>
+                                <input type="text" placeholder="Cari kota, area..." class="w-full bg-white/10 border border-white/20 text-white rounded-lg py-3 pl-10 pr-4 focus:outline-none focus:border-brand-gold transition-colors placeholder-gray-400">
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <label class="text-gray-300 text-xs mb-2 uppercase tracking-wider font-semibold">Tipe Properti</label>
+                            <div class="relative">
+                                <i class="fa-solid fa-house absolute left-3 top-1/2 -translate-y-1/2 text-brand-gold"></i>
+                                <select class="w-full bg-white/10 border border-white/20 text-white rounded-lg py-3 pl-10 pr-4 focus:outline-none focus:border-brand-gold transition-colors appearance-none cursor-pointer">
+                                    <option value="" class="text-black">Semua Tipe</option>
+                                    <option value="rumah" class="text-black">Rumah</option>
+                                    <option value="apartemen" class="text-black">Apartemen</option>
+                                    <option value="ruko" class="text-black">Ruko</option>
+                                    <option value="tanah" class="text-black">Tanah</option>
+                                    <option value="villa" class="text-black">Villa</option>
+                                </select>
+                                <i class="fa-solid fa-chevron-down absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none text-xs"></i>
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <label class="text-gray-300 text-xs mb-2 uppercase tracking-wider font-semibold">Harga Maksimal</label>
+                            <div class="relative">
+                                <i class="fa-solid fa-tag absolute left-3 top-1/2 -translate-y-1/2 text-brand-gold"></i>
+                                <select class="w-full bg-white/10 border border-white/20 text-white rounded-lg py-3 pl-10 pr-4 focus:outline-none focus:border-brand-gold transition-colors appearance-none cursor-pointer">
+                                    <option value="" class="text-black">Semua Harga</option>
+                                    <option value="1M" class="text-black">< Rp 1 Miliar</option>
+                                    <option value="3M" class="text-black">< Rp 3 Miliar</option>
+                                    <option value="5M" class="text-black">< Rp 5 Miliar</option>
+                                    <option value="10M" class="text-black">> Rp 10 Miliar</option>
+                                </select>
+                                <i class="fa-solid fa-chevron-down absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none text-xs"></i>
+                            </div>
+                        </div>
+                        <button type="submit" class="bg-brand-gold hover:bg-brand-goldhover text-white rounded-lg py-3 px-4 transition-colors font-medium flex items-center justify-center gap-2 h-[50px]">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span>Cari Properti</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Search Filter (Mobile Alternative) -->
+    <section class="bg-brand-gray dark:bg-brand-black pt-16 pb-8 md:hidden px-4">
+        <div class="bg-white dark:bg-brand-darkbg rounded-2xl p-6 shadow-lg border border-gray-100 dark:border-brand-lightborder">
+             <form class="flex flex-col gap-4" onsubmit="event.preventDefault(); window.location.hash='#properties';">
+                <div class="relative">
+                    <i class="fa-solid fa-location-dot absolute left-3 top-1/2 -translate-y-1/2 text-brand-gold"></i>
+                    <input type="text" placeholder="Lokasi (Cari kota, area...)" class="w-full bg-gray-50 dark:bg-black/50 border border-gray-200 dark:border-white/10 text-brand-black dark:text-white rounded-lg py-3 pl-10 pr-4 focus:outline-none focus:border-brand-gold transition-colors">
+                </div>
+                <div class="relative">
+                    <i class="fa-solid fa-house absolute left-3 top-1/2 -translate-y-1/2 text-brand-gold"></i>
+                    <select class="w-full bg-gray-50 dark:bg-black/50 border border-gray-200 dark:border-white/10 text-brand-black dark:text-white rounded-lg py-3 pl-10 pr-4 focus:outline-none focus:border-brand-gold transition-colors appearance-none">
+                        <option value="">Semua Tipe Properti</option>
+                        <option value="rumah">Rumah</option>
+                        <option value="apartemen">Apartemen</option>
+                        <option value="villa">Villa</option>
+                    </select>
+                    <i class="fa-solid fa-chevron-down absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none text-xs"></i>
+                </div>
+                <button type="submit" class="w-full bg-brand-gold hover:bg-brand-goldhover text-white rounded-lg py-3 px-4 transition-colors font-medium flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-magnifying-glass"></i> Cari Properti
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="pt-24 md:pt-40 pb-20 bg-brand-gray dark:bg-brand-black transition-colors">
+        <div class="container mx-auto px-4 md:px-8 max-w-7xl">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+                <!-- Text Content -->
+                <div class="reveal-left">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-[2px] bg-brand-gold"></div>
+                        <span class="text-brand-gold font-medium uppercase tracking-widest text-sm">Mengenal Kami</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif font-bold mb-6 text-brand-black dark:text-white leading-tight">
+                        Tentang Otto Realty
+                    </h2>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed text-lg">
+                        Otto Realty merupakan perusahaan pemasaran properti profesional yang membantu masyarakat menemukan hunian maupun investasi terbaik. Kami memahami bahwa properti bukan sekadar bangunan, melainkan tempat terciptanya kenangan dan pondasi masa depan.
+                    </p>
+                    <p class="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed text-lg">
+                        Kami bekerja sama secara eksklusif dengan berbagai developer terpercaya di seluruh Indonesia untuk menghadirkan portofolio properti berkualitas tinggi dengan harga yang kompetitif dan legalitas yang sepenuhnya terjamin.
+                    </p>
+                    <a href="#services" class="inline-flex items-center gap-2 font-medium text-brand-black dark:text-white hover:text-brand-gold dark:hover:text-brand-gold transition-colors group">
+                        Pelajari Layanan Kami
+                        <i class="fa-solid fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+
+                <!-- Images & Stats Grid -->
+                <div class="relative reveal-right delay-200 mt-10 lg:mt-0">
+                    <div class="relative rounded-2xl overflow-hidden shadow-premium">
+                        <img src="https://images.unsplash.com/photo-1613490908592-a5e666ce8d28?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Modern Interior" class="w-full h-[350px] md:h-[450px] object-cover hover:scale-105 transition-transform duration-700" loading="lazy">
+                        <!-- Play button overlay (decorative) -->
+                        <div class="absolute inset-0 flex items-center justify-center bg-black/20 group cursor-pointer hover:bg-black/40 transition-colors" onclick="alert('Video profil perusahaan akan segera hadir.')">
+                            <div class="w-16 h-16 bg-white/30 backdrop-blur-md rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-play text-white text-xl ml-1"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Floating Stats Box (Glassmorphism) -->
+                    <div class="lg:absolute lg:-bottom-10 lg:-left-10 mt-6 lg:mt-0 bg-white/90 dark:bg-brand-darkbg/90 backdrop-blur-lg p-6 md:p-8 rounded-2xl shadow-2xl border border-gray-100 dark:border-white/10 grid grid-cols-2 gap-6 md:gap-8 w-full lg:w-auto">
+                        <div class="text-center">
+                            <div class="text-3xl md:text-4xl font-serif font-bold text-brand-gold mb-1"><span class="counter" data-target="1000">0</span>+</div>
+                            <div class="text-xs text-gray-500 uppercase tracking-widest font-semibold">Properti<br>Dipasarkan</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl md:text-4xl font-serif font-bold text-brand-gold mb-1"><span class="counter" data-target="500">0</span>+</div>
+                            <div class="text-xs text-gray-500 uppercase tracking-widest font-semibold">Klien<br>Puas</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl md:text-4xl font-serif font-bold text-brand-gold mb-1"><span class="counter" data-target="50">0</span>+</div>
+                            <div class="text-xs text-gray-500 uppercase tracking-widest font-semibold">Developer<br>Partner</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl md:text-4xl font-serif font-bold text-brand-gold mb-1"><span class="counter" data-target="10">0</span>+</div>
+                            <div class="text-xs text-gray-500 uppercase tracking-widest font-semibold">Tahun<br>Pengalaman</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section id="properties" class="py-24 bg-white dark:bg-brand-black transition-colors">
+        <div class="container mx-auto px-4 md:px-8 max-w-7xl">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 reveal-up">
+                <div>
+                    <div class="flex items-center gap-4 mb-2">
+                        <div class="w-8 h-[2px] bg-brand-gold"></div>
+                        <span class="text-brand-gold font-medium uppercase tracking-widest text-sm">Koleksi Eksklusif</span>
+                    </div>
+                    <h2 class="text-3xl md:text-5xl font-serif font-bold text-brand-black dark:text-white">
+                        Properti Pilihan
+                    </h2>
+                </div>
+                <a href="#" class="hidden md:inline-flex items-center gap-2 font-medium text-brand-gold hover:text-brand-goldhover transition-colors group mt-4 md:mt-0">
+                    Lihat Semua Properti
+                    <i class="fa-solid fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+
+            <!-- Property Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Property Card 1 -->
+                <div class="bg-white dark:bg-brand-darkbg rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-premium group border border-gray-100 dark:border-brand-lightborder reveal-up transition-all duration-300">
+                    <div class="relative h-72 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="The Royal Kemang Villa" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" loading="lazy">
+                        <div class="absolute top-4 left-4 bg-brand-black/80 backdrop-blur-sm text-white text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider">For Sale</div>
+                        <div class="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center text-gray-500 hover:text-red-500 hover:bg-white transition-colors cursor-pointer">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent">
+                            <div class="text-brand-gold font-bold text-xl">Rp 15.5 Miliar</div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl font-bold mb-2 text-brand-black dark:text-white line-clamp-1">The Royal Kemang Villa</h3>
+                        <p class="text-gray-500 dark:text-gray-400 text-sm mb-5 flex items-center gap-2">
+                            <i class="fa-solid fa-location-dot text-brand-gold"></i> Kemang, Jakarta Selatan
+                        </p>
+                        <div class="grid grid-cols-3 gap-2 py-4 border-t border-gray-100 dark:border-brand-lightborder mb-4">
+                            <div class="text-center flex flex-col items-center">
+                                <i class="fa-solid fa-bed text-gray-400 mb-1.5"></i>
+                                <span class="text-sm font-semibold text-brand-black dark:text-white">4 KT</span>
+                            </div>
+                            <div class="text-center flex flex-col items-center border-l border-r border-gray-100 dark:border-brand-lightborder">
+                                <i class="fa-solid fa-bath text-gray-400 mb-1.5"></i>
+                                <span class="text-sm font-semibold text-brand-black dark:text-white">3 KM</span>
+                            </div>
+                            <div class="text-center flex flex-col items-center">
+                                <i class="fa-solid fa-ruler-combined text-gray-400 mb-1.5"></i>
+                                <span class="text-sm font-semibold text-brand-black dark:text-white">350m²</span>
+                            </div>
+                        </div>
+                        <button class="w-full py-3.5 rounded-xl bg-brand-gray dark:bg-black text-brand-black dark:text-white hover:bg-brand-gold hover:text-white dark:hover:bg-brand-gold transition-colors font-semibold text-sm tracking-wide uppercase">
+                            Lihat Detail
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Property Card 2 -->
+                <div class="bg-white dark:bg-brand-darkbg rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-premium group border border-gray-100 dark:border-brand-lightborder reveal-up delay-100 transition-all duration-300">
+                    <div class="relative h-72 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Skyline Penthouse SCBD" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" loading="lazy">
+                        <div class="absolute top-4 left-4 bg-brand-gold/90 backdrop-blur-sm text-white text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider">New Project</div>
+                        <div class="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center text-gray-500 hover:text-red-500 hover:bg-white transition-colors cursor-pointer">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent">
+                            <div class="text-brand-gold font-bold text-xl">Mulai Rp 8.2 Miliar</div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl font-bold mb-2 text-brand-black dark:text-white line-clamp-1">Skyline Penthouse SCBD</h3>
+                        <p class="text-gray-500 dark:text-gray-400 text-sm mb-5 flex items-center gap-2">
+                            <i class="fa-solid fa-location-dot text-brand-gold"></i> SCBD, Jakarta Selatan
+                        </p>
+                        <div class="grid grid-cols-3 gap-2 py-4 border-t border-gray-100 dark:border-brand-lightborder mb-4">
+                            <div class="text-center flex flex-col items-center">
+                                <i class="fa-solid fa-bed text-gray-400 mb-1.5"></i>
+                                <span class="text-sm font-semibold text-brand-black dark:text-white">3 KT</span>
+                            </div>
+                            <div class="text-center flex flex-col items-center border-l border-r border-gray-100 dark:border-brand-lightborder">
+                                <i class="fa-solid fa-bath text-gray-400 mb-1.5"></i>
+                                <span class="text-sm font-semibold text-brand-black dark:text-white">2 KM</span>
+                            </div>
+                            <div class="text-center flex flex-col items-center">
+                                <i class="fa-solid fa-expand text-gray-400 mb-1.5"></i>
+                                <span class="text-sm font-semibold text-brand-black dark:text-white">180m²</span>
+                            </div>
+                        </div>
+                        <button class="w-full py-3.5 rounded-xl bg-brand-gray dark:bg-black text-brand-black dark:text-white hover:bg-brand-gold hover:text-white dark:hover:bg-brand-gold transition-colors font-semibold text-sm tracking-wide uppercase">
+                            Lihat Detail
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Property Card 3 -->
+                <div class="bg-white dark:bg-brand-darkbg rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-premium group border border-gray-100 dark:border-brand-lightborder reveal-up delay-200 transition-all duration-300">
+                    <div class="relative h-72 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Menteng Classic" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" loading="lazy">
+                        <div class="absolute top-4 left-4 bg-brand-black/80 backdrop-blur-sm text-white text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider">For Sale</div>
+                        <div class="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center text-gray-500 hover:text-red-500 hover:bg-white transition-colors cursor-pointer">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent">
+                            <div class="text-brand-gold font-bold text-xl">Rp 45.0 Miliar</div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl font-bold mb-2 text-brand-black dark:text-white line-clamp-1">Menteng Heritage Home</h3>
+                        <p class="text-gray-500 dark:text-gray-400 text-sm mb-5 flex items-center gap-2">
+                            <i class="fa-solid fa-location-dot text-brand-gold"></i> Menteng, Jakarta Pusat
+                        </p>
+                        <div class="grid grid-cols-3 gap-2 py-4 border-t border-gray-100 dark:border-brand-lightborder mb-4">
+                            <div class="text-center flex flex-col items-center">
+                                <i class="fa-solid fa-bed text-gray-400 mb-1.5"></i>
+                                <span class="text-sm font-semibold text-brand-black dark:text-white">5 KT</span>
+                            </div>
+                            <div class="text-center flex flex-col items-center border-l border-r border-gray-100 dark:border-brand-lightborder">
+                                <i class="fa-solid fa-bath text-gray-400 mb-1.5"></i>
+                                <span class="text-sm font-semibold text-brand-black dark:text-white">5 KM</span>
+                            </div>
+                            <div class="text-center flex flex-col items-center">
+                                <i class="fa-solid fa-ruler-combined text-gray-400 mb-1.5"></i>
+                                <span class="text-sm font-semibold text-brand-black dark:text-white">800m²</span>
+                            </div>
+                        </div>
+                        <button class="w-full py-3.5 rounded-xl bg-brand-gray dark:bg-black text-brand-black dark:text-white hover:bg-brand-gold hover:text-white dark:hover:bg-brand-gold transition-colors font-semibold text-sm tracking-wide uppercase">
+                            Lihat Detail
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Property Card 4 -->
+                <div class="bg-white dark:bg-brand-darkbg rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-premium group border border-gray-100 dark:border-brand-lightborder reveal-up transition-all duration-300">
+                     <div class="relative h-72 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="BSD Modern" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" loading="lazy">
+                        <div class="absolute top-4 left-4 bg-brand-black/80 backdrop-blur-sm text-white text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider">For Sale</div>
+                        <div class="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center text-gray-500 hover:text-red-500 hover:bg-white transition-colors cursor-pointer">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent">
+                            <div class="text-brand-gold font-bold text-xl">Rp 4.5 Miliar</div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl font-bold mb-2 text-brand-black dark:text-white line-clamp-1">Aetheria BSD City</h3>
+                        <p class="text-gray-500 dark:text-gray-400 text-sm mb-5 flex items-center gap-2">
+                            <i class="fa-solid fa-location-dot text-brand-gold"></i> BSD City, Tangerang
+                        </p>
+                        <div class="grid grid-cols-3 gap-2 py-4 border-t border-gray-100 dark:border-brand-lightborder mb-4">
+                            <div class="text-center flex flex-col items-center">
+                                <i class="fa-solid fa-bed text-gray-400 mb-1.5"></i>
+                                <span class="text-sm font-semibold text-brand-black dark:text-white">4 KT</span>
+                            </div>
+                            <div class="text-center flex flex-col items-center border-l border-r border-gray-100 dark:border-brand-lightborder">
+                                <i class="fa-solid fa-bath text-gray-400 mb-1.5"></i>
+                                <span class="text-sm font-semibold text-brand-black dark:text-white">3 KM</span>
+                            </div>
+                            <div class="text-center flex flex-col items-center">
+                                <i class="fa-solid fa-ruler-combined text-gray-400 mb-1.5"></i>
+                                <span class="text-sm font-semibold text-brand-black dark:text-white">200m²</span>
+                            </div>
+                        </div>
+                        <button class="w-full py-3.5 rounded-xl bg-brand-gray dark:bg-black text-brand-black dark:text-white hover:bg-brand-gold hover:text-white dark:hover:bg-brand-gold transition-colors font-semibold text-sm tracking-wide uppercase">
+                            Lihat Detail
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Property Card 5 -->
+                <div class="bg-white dark:bg-brand-darkbg rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-premium group border border-gray-100 dark:border-brand-lightborder reveal-up delay-100 transition-all duration-300">
+                     <div class="relative h-72 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1628611225249-6c471c26b8e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="PIK Ocean View" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" loading="lazy">
+                        <div class="absolute top-4 left-4 bg-brand-gold/90 backdrop-blur-sm text-white text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider">Premium</div>
+                        <div class="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center text-gray-500 hover:text-red-500 hover:bg-white transition-colors cursor-pointer">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent">
+                            <div class="text-brand-gold font-bold text-xl">Rp 12.0 Miliar</div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl font-bold mb-2 text-brand-black dark:text-white line-clamp-1">Ocean View PIK</h3>
+                        <p class="text-gray-500 dark:text-gray-400 text-sm mb-5 flex items-center gap-2">
+                            <i class="fa-solid fa-location-dot text-brand-gold"></i> Pantai Indah Kapuk
+                        </p>
+                        <div class="grid grid-cols-3 gap-2 py-4 border-t border-gray-100 dark:border-brand-lightborder mb-4">
+                             <div class="text-center flex flex-col items-center">
+                                <i class="fa-solid fa-bed text-gray-400 mb-1.5"></i>
+                                <span class="text-sm font-semibold text-brand-black dark:text-white">5 KT</span>
+                            </div>
+                            <div class="text-center flex flex-col items-center border-l border-r border-gray-100 dark:border-brand-lightborder">
+                                <i class="fa-solid fa-bath text-gray-400 mb-1.5"></i>
+                                <span class="text-sm font-semibold text-brand-black dark:text-white">4 KM</span>
+                            </div>
+                            <div class="text-center flex flex-col items-center">
+                                <i class="fa-solid fa-ruler-combined text-gray-400 mb-1.5"></i>
+                                <span class="text-sm font-semibold text-brand-black dark:text-white">450m²</span>
+                            </div>
+                        </div>
+                        <button class="w-full py-3.5 rounded-xl bg-brand-gray dark:bg-black text-brand-black dark:text-white hover:bg-brand-gold hover:text-white dark:hover:bg-brand-gold transition-colors font-semibold text-sm tracking-wide uppercase">
+                            Lihat Detail
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Property Card 6 -->
+                <div class="bg-white dark:bg-brand-darkbg rounded-2xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-premium group border border-gray-100 dark:border-brand-lightborder reveal-up delay-200 transition-all duration-300">
+                     <div class="relative h-72 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Apartment Investasi" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" loading="lazy">
+                        <div class="absolute top-4 left-4 bg-brand-black/80 backdrop-blur-sm text-white text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider">Investasi</div>
+                        <div class="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center text-gray-500 hover:text-red-500 hover:bg-white transition-colors cursor-pointer">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent">
+                            <div class="text-brand-gold font-bold text-xl">Rp 2.1 Miliar</div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl font-bold mb-2 text-brand-black dark:text-white line-clamp-1">Veranda Residences</h3>
+                        <p class="text-gray-500 dark:text-gray-400 text-sm mb-5 flex items-center gap-2">
+                            <i class="fa-solid fa-location-dot text-brand-gold"></i> Puri Indah, Jakarta Barat
+                        </p>
+                        <div class="grid grid-cols-3 gap-2 py-4 border-t border-gray-100 dark:border-brand-lightborder mb-4">
+                             <div class="text-center flex flex-col items-center">
+                                <i class="fa-solid fa-bed text-gray-400 mb-1.5"></i>
+                                <span class="text-sm font-semibold text-brand-black dark:text-white">2 KT</span>
+                            </div>
+                            <div class="text-center flex flex-col items-center border-l border-r border-gray-100 dark:border-brand-lightborder">
+                                <i class="fa-solid fa-bath text-gray-400 mb-1.5"></i>
+                                <span class="text-sm font-semibold text-brand-black dark:text-white">1 KM</span>
+                            </div>
+                            <div class="text-center flex flex-col items-center">
+                                <i class="fa-solid fa-expand text-gray-400 mb-1.5"></i>
+                                <span class="text-sm font-semibold text-brand-black dark:text-white">85m²</span>
+                            </div>
+                        </div>
+                        <button class="w-full py-3.5 rounded-xl bg-brand-gray dark:bg-black text-brand-black dark:text-white hover:bg-brand-gold hover:text-white dark:hover:bg-brand-gold transition-colors font-semibold text-sm tracking-wide uppercase">
+                            Lihat Detail
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- Mobile view all button -->
+            <div class="mt-10 text-center md:hidden">
+                 <a href="#" class="inline-flex items-center justify-center w-full py-4 rounded-xl border-2 border-brand-gold text-brand-gold font-bold hover:bg-brand-gold hover:text-white transition-colors uppercase tracking-widest text-sm">
+                    Lihat Semua Properti
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Categories -->
+    <section class="py-12 border-t border-b border-gray-100 dark:border-brand-lightborder bg-brand-gray dark:bg-brand-darkbg transition-colors">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6">
+                <a href="#" class="flex flex-col items-center justify-center p-6 bg-white dark:bg-brand-black rounded-2xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300 group reveal-up border border-transparent dark:border-white/5">
+                    <div class="w-16 h-16 rounded-full bg-brand-gray dark:bg-brand-darkbg flex items-center justify-center mb-4 group-hover:bg-brand-gold/10 transition-colors">
+                        <i class="fa-solid fa-house text-2xl text-gray-400 group-hover:text-brand-gold transition-colors"></i>
+                    </div>
+                    <span class="font-medium text-brand-black dark:text-white">Rumah</span>
+                </a>
+                <a href="#" class="flex flex-col items-center justify-center p-6 bg-white dark:bg-brand-black rounded-2xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300 group reveal-up delay-100 border border-transparent dark:border-white/5">
+                    <div class="w-16 h-16 rounded-full bg-brand-gray dark:bg-brand-darkbg flex items-center justify-center mb-4 group-hover:bg-brand-gold/10 transition-colors">
+                        <i class="fa-solid fa-building text-2xl text-gray-400 group-hover:text-brand-gold transition-colors"></i>
+                    </div>
+                    <span class="font-medium text-brand-black dark:text-white">Apartemen</span>
+                </a>
+                <a href="#" class="flex flex-col items-center justify-center p-6 bg-white dark:bg-brand-black rounded-2xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300 group reveal-up delay-200 border border-transparent dark:border-white/5">
+                    <div class="w-16 h-16 rounded-full bg-brand-gray dark:bg-brand-darkbg flex items-center justify-center mb-4 group-hover:bg-brand-gold/10 transition-colors">
+                        <i class="fa-solid fa-umbrella-beach text-2xl text-gray-400 group-hover:text-brand-gold transition-colors"></i>
+                    </div>
+                    <span class="font-medium text-brand-black dark:text-white">Villa</span>
+                </a>
+                <a href="#" class="flex flex-col items-center justify-center p-6 bg-white dark:bg-brand-black rounded-2xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300 group reveal-up delay-300 border border-transparent dark:border-white/5">
+                    <div class="w-16 h-16 rounded-full bg-brand-gray dark:bg-brand-darkbg flex items-center justify-center mb-4 group-hover:bg-brand-gold/10 transition-colors">
+                        <i class="fa-solid fa-store text-2xl text-gray-400 group-hover:text-brand-gold transition-colors"></i>
+                    </div>
+                    <span class="font-medium text-brand-black dark:text-white">Ruko</span>
+                </a>
+                <a href="#" class="flex flex-col items-center justify-center p-6 bg-white dark:bg-brand-black rounded-2xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300 group reveal-up delay-400 border border-transparent dark:border-white/5">
+                    <div class="w-16 h-16 rounded-full bg-brand-gray dark:bg-brand-darkbg flex items-center justify-center mb-4 group-hover:bg-brand-gold/10 transition-colors">
+                        <i class="fa-solid fa-map-location-dot text-2xl text-gray-400 group-hover:text-brand-gold transition-colors"></i>
+                    </div>
+                    <span class="font-medium text-brand-black dark:text-white">Tanah</span>
+                </a>
+                <a href="#" class="flex flex-col items-center justify-center p-6 bg-white dark:bg-brand-black rounded-2xl hover:shadow-lg hover:-translate-y-2 transition-all duration-300 group reveal-up delay-500 border border-transparent dark:border-white/5">
+                    <div class="w-16 h-16 rounded-full bg-brand-gray dark:bg-brand-darkbg flex items-center justify-center mb-4 group-hover:bg-brand-gold/10 transition-colors">
+                        <i class="fa-solid fa-warehouse text-2xl text-gray-400 group-hover:text-brand-gold transition-colors"></i>
+                    </div>
+                    <span class="font-medium text-brand-black dark:text-white">Gudang</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us & Services -->
+    <section id="services" class="py-24 bg-white dark:bg-brand-black transition-colors relative">
+        <div class="container mx-auto px-4 md:px-8 max-w-7xl">
+            <div class="text-center mb-16 reveal-up">
+                <span class="text-brand-gold font-medium uppercase tracking-widest text-sm mb-2 block">Keunggulan & Layanan</span>
+                <h2 class="text-3xl md:text-5xl font-serif font-bold text-brand-black dark:text-white">
+                    Mengapa Memilih Otto Realty
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+                <!-- Keunggulan Items -->
+                <div class="bg-brand-gray dark:bg-brand-darkbg p-8 rounded-2xl hover:-translate-y-2 transition-transform duration-300 reveal-up border border-transparent dark:border-brand-lightborder group">
+                    <div class="w-14 h-14 bg-white dark:bg-brand-black rounded-xl flex items-center justify-center mb-6 shadow-sm group-hover:bg-brand-gold transition-colors">
+                        <i class="fa-solid fa-user-tie text-2xl text-brand-gold group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-3 text-brand-black dark:text-white">Konsultan Profesional</h3>
+                    <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">Tim ahli kami memberikan analisis pasar akurat dan panduan terpercaya untuk keputusan investasi properti Anda.</p>
+                </div>
+                
+                <div class="bg-brand-gray dark:bg-brand-darkbg p-8 rounded-2xl hover:-translate-y-2 transition-transform duration-300 reveal-up delay-100 border border-transparent dark:border-brand-lightborder group">
+                    <div class="w-14 h-14 bg-white dark:bg-brand-black rounded-xl flex items-center justify-center mb-6 shadow-sm group-hover:bg-brand-gold transition-colors">
+                        <i class="fa-solid fa-tag text-2xl text-brand-gold group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-3 text-brand-black dark:text-white">Harga Transparan</h3>
+                    <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">Kami menjamin tidak ada biaya tersembunyi. Semua harga yang ditampilkan adalah harga resmi dan terbaik.</p>
+                </div>
+
+                <div class="bg-brand-gray dark:bg-brand-darkbg p-8 rounded-2xl hover:-translate-y-2 transition-transform duration-300 reveal-up delay-200 border border-transparent dark:border-brand-lightborder group">
+                    <div class="w-14 h-14 bg-white dark:bg-brand-black rounded-xl flex items-center justify-center mb-6 shadow-sm group-hover:bg-brand-gold transition-colors">
+                        <i class="fa-solid fa-scale-balanced text-2xl text-brand-gold group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-3 text-brand-black dark:text-white">Legalitas Terjamin</h3>
+                    <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">Setiap properti melalui proses verifikasi dokumen yang ketat untuk memastikan keamanan transaksi Anda.</p>
+                </div>
+                
+                <div class="bg-brand-gray dark:bg-brand-darkbg p-8 rounded-2xl hover:-translate-y-2 transition-transform duration-300 reveal-up border border-transparent dark:border-brand-lightborder group">
+                    <div class="w-14 h-14 bg-white dark:bg-brand-black rounded-xl flex items-center justify-center mb-6 shadow-sm group-hover:bg-brand-gold transition-colors">
+                        <i class="fa-regular fa-building text-2xl text-brand-gold group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-3 text-brand-black dark:text-white">Developer Terpercaya</h3>
+                    <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">Bekerja sama eksklusif dengan pengembang ternama rekam jejak terbaik di seluruh Indonesia.</p>
+                </div>
+
+                <div class="bg-brand-gray dark:bg-brand-darkbg p-8 rounded-2xl hover:-translate-y-2 transition-transform duration-300 reveal-up delay-100 border border-transparent dark:border-brand-lightborder group">
+                    <div class="w-14 h-14 bg-white dark:bg-brand-black rounded-xl flex items-center justify-center mb-6 shadow-sm group-hover:bg-brand-gold transition-colors">
+                        <i class="fa-solid fa-bolt text-2xl text-brand-gold group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-3 text-brand-black dark:text-white">Proses Cepat</h3>
+                    <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">Sistem kerja yang efisien memastikan proses pencarian hingga transaksi berjalan dengan cepat dan mudah.</p>
+                </div>
+
+                <div class="bg-brand-gray dark:bg-brand-darkbg p-8 rounded-2xl hover:-translate-y-2 transition-transform duration-300 reveal-up delay-200 border border-transparent dark:border-brand-lightborder group">
+                    <div class="w-14 h-14 bg-white dark:bg-brand-black rounded-xl flex items-center justify-center mb-6 shadow-sm group-hover:bg-brand-gold transition-colors">
+                        <i class="fa-solid fa-handshake-angle text-2xl text-brand-gold group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-3 text-brand-black dark:text-white">Pendampingan Hingga Akad</h3>
+                    <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">Kami mendampingi Anda dari tahap pencarian, negosiasi, pengurusan KPR, hingga serah terima kunci (Akad).</p>
+                </div>
+            </div>
+
+            <!-- Services List (Glassmorphism effect) -->
+            <div class="relative rounded-3xl overflow-hidden reveal-up">
+                <div class="absolute inset-0 bg-brand-gold/5 dark:bg-brand-gold/10"></div>
+                <div class="absolute -right-20 -top-20 w-64 h-64 bg-brand-gold/20 rounded-full blur-3xl"></div>
+                <div class="absolute -left-20 -bottom-20 w-64 h-64 bg-brand-gold/10 rounded-full blur-3xl"></div>
+                
+                <div class="relative z-10 p-8 md:p-12 border border-brand-gold/20 rounded-3xl backdrop-blur-sm">
+                    <h3 class="text-2xl font-serif font-bold mb-8 text-brand-black dark:text-white text-center">Layanan Utama Kami</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-6 gap-x-4 max-w-4xl mx-auto">
+                        <div class="flex items-center gap-4 bg-white/50 dark:bg-black/30 p-4 rounded-xl">
+                            <i class="fa-solid fa-circle-check text-brand-gold text-lg"></i>
+                            <span class="font-semibold text-brand-black dark:text-gray-200 tracking-wide">Jual Properti</span>
+                        </div>
+                        <div class="flex items-center gap-4 bg-white/50 dark:bg-black/30 p-4 rounded-xl">
+                            <i class="fa-solid fa-circle-check text-brand-gold text-lg"></i>
+                            <span class="font-semibold text-brand-black dark:text-gray-200 tracking-wide">Beli Properti</span>
+                        </div>
+                        <div class="flex items-center gap-4 bg-white/50 dark:bg-black/30 p-4 rounded-xl">
+                            <i class="fa-solid fa-circle-check text-brand-gold text-lg"></i>
+                            <span class="font-semibold text-brand-black dark:text-gray-200 tracking-wide">Investasi Properti</span>
+                        </div>
+                        <div class="flex items-center gap-4 bg-white/50 dark:bg-black/30 p-4 rounded-xl">
+                            <i class="fa-solid fa-circle-check text-brand-gold text-lg"></i>
+                            <span class="font-semibold text-brand-black dark:text-gray-200 tracking-wide">Konsultasi Properti</span>
+                        </div>
+                        <div class="flex items-center gap-4 bg-white/50 dark:bg-black/30 p-4 rounded-xl">
+                            <i class="fa-solid fa-circle-check text-brand-gold text-lg"></i>
+                            <span class="font-semibold text-brand-black dark:text-gray-200 tracking-wide">Properti Komersial</span>
+                        </div>
+                        <div class="flex items-center gap-4 bg-white/50 dark:bg-black/30 p-4 rounded-xl">
+                            <i class="fa-solid fa-circle-check text-brand-gold text-lg"></i>
+                            <span class="font-semibold text-brand-black dark:text-gray-200 tracking-wide">Kerja Sama Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-24 bg-brand-gray dark:bg-brand-darkbg overflow-hidden relative transition-colors">
+        <div class="container mx-auto px-4 md:px-8 max-w-7xl">
+            <div class="text-center mb-16 reveal-up">
+                <span class="text-brand-gold font-medium uppercase tracking-widest text-sm mb-2 block">Testimoni Klien</span>
+                <h2 class="text-3xl md:text-5xl font-serif font-bold text-brand-black dark:text-white">
+                    Apa Kata Mereka
+                </h2>
+            </div>
+
+            <div class="swiper testimonial-swiper mb-10 reveal-up">
+                <div class="swiper-wrapper pb-16">
+                    <!-- Testi 1 -->
+                    <div class="swiper-slide">
+                        <div class="bg-white dark:bg-brand-black p-8 md:p-10 rounded-2xl h-full border border-gray-100 dark:border-brand-lightborder shadow-sm flex flex-col justify-between">
+                            <div>
+                                <div class="flex text-brand-gold text-sm mb-6">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="text-gray-600 dark:text-gray-300 mb-8 italic text-lg leading-relaxed">"Pelayanan Otto Realty sangat luar biasa. Konsultannya sabar mencarikan rumah yang pas dengan budget dan keinginan keluarga saya. Proses KPR juga dibantu sampai tuntas."</p>
+                            </div>
+                            <div class="flex items-center gap-4 mt-auto">
+                                <img src="https://ui-avatars.com/api/?name=Budi+Santoso&background=C8A45D&color=fff&size=128" alt="Budi Santoso" class="w-14 h-14 rounded-full object-cover">
+                                <div>
+                                    <h4 class="font-bold text-brand-black dark:text-white text-base">Budi Santoso</h4>
+                                    <span class="text-xs text-brand-gold font-medium uppercase tracking-wider">Pembeli Rumah BSD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testi 2 -->
+                    <div class="swiper-slide">
+                        <div class="bg-white dark:bg-brand-black p-8 md:p-10 rounded-2xl h-full border border-gray-100 dark:border-brand-lightborder shadow-sm flex flex-col justify-between">
+                            <div>
+                                <div class="flex text-brand-gold text-sm mb-6">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="text-gray-600 dark:text-gray-300 mb-8 italic text-lg leading-relaxed">"Sebagai investor pemula, saya merasa sangat aman berinvestasi melalui Otto. Analisa pasarnya tajam, dan unit apartemen yang disarankan langsung tersewa dalam waktu singkat."</p>
+                            </div>
+                            <div class="flex items-center gap-4 mt-auto">
+                                <img src="https://ui-avatars.com/api/?name=Anita+Wijaya&background=111111&color=fff&size=128" alt="Anita Wijaya" class="w-14 h-14 rounded-full object-cover">
+                                <div>
+                                    <h4 class="font-bold text-brand-black dark:text-white text-base">Anita Wijaya</h4>
+                                    <span class="text-xs text-brand-gold font-medium uppercase tracking-wider">Investor Properti</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testi 3 -->
+                    <div class="swiper-slide">
+                        <div class="bg-white dark:bg-brand-black p-8 md:p-10 rounded-2xl h-full border border-gray-100 dark:border-brand-lightborder shadow-sm flex flex-col justify-between">
+                            <div>
+                                <div class="flex text-brand-gold text-sm mb-6">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="text-gray-600 dark:text-gray-300 mb-8 italic text-lg leading-relaxed">"Transparan dan sangat profesional. Menjual rumah lama saya lewat Otto Realty jauh lebih cepat dari perkiraan. Tim marketingnya bergerak sangat gesit dan komunikatif."</p>
+                            </div>
+                            <div class="flex items-center gap-4 mt-auto">
+                                <img src="https://ui-avatars.com/api/?name=Hendrik+Lim&background=F5F5F5&color=111&size=128" alt="Hendrik Lim" class="w-14 h-14 rounded-full object-cover border border-gray-200 dark:border-brand-lightborder">
+                                <div>
+                                    <h4 class="font-bold text-brand-black dark:text-white text-base">Hendrik Lim</h4>
+                                    <span class="text-xs text-brand-gold font-medium uppercase tracking-wider">Penjual Properti</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Developer -->
+    <section class="py-16 bg-white dark:bg-brand-black transition-colors border-t border-gray-100 dark:border-brand-lightborder">
+        <div class="container mx-auto px-4 max-w-7xl reveal-up">
+            <p class="text-center text-sm text-gray-400 dark:text-gray-500 mb-10 uppercase tracking-widest font-semibold">Developer Partner Terpercaya Kami</p>
+            <div class="swiper partner-swiper">
+                <div class="swiper-wrapper items-center">
+                    <!-- Minimalist text logos as placeholders for premium look -->
+                    <div class="swiper-slide text-center opacity-40 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0">
+                        <span class="font-serif font-bold text-2xl dark:text-white tracking-widest">CIPUTRA</span>
+                    </div>
+                    <div class="swiper-slide text-center opacity-40 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0">
+                        <span class="font-serif font-bold text-2xl dark:text-white tracking-widest">SINARMAS LAND</span>
+                    </div>
+                    <div class="swiper-slide text-center opacity-40 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0">
+                        <span class="font-serif font-bold text-2xl dark:text-white tracking-widest">AGUNG PODOMORO</span>
+                    </div>
+                    <div class="swiper-slide text-center opacity-40 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0">
+                        <span class="font-serif font-bold text-2xl dark:text-white tracking-widest">PAKUWON</span>
+                    </div>
+                    <div class="swiper-slide text-center opacity-40 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0">
+                        <span class="font-serif font-bold text-2xl dark:text-white tracking-widest">SUMMARECON</span>
+                    </div>
+                     <div class="swiper-slide text-center opacity-40 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0">
+                        <span class="font-serif font-bold text-2xl dark:text-white tracking-widest">LIPPO</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium CTA Banner -->
+    <section class="py-28 relative overflow-hidden bg-brand-black">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="CTA bg" class="w-full h-full object-cover opacity-30" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-black to-transparent"></div>
+        </div>
+        <div class="container mx-auto px-4 relative z-10 text-center reveal-up">
+            <h2 class="text-3xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 leading-tight max-w-4xl mx-auto">Temukan Properti Impian Anda Hari Ini</h2>
+            <p class="text-gray-300 max-w-2xl mx-auto mb-10 text-lg md:text-xl font-light">Konsultasikan kebutuhan properti Anda dengan ahlinya secara gratis.</p>
+            <a href="#contact" class="inline-block bg-brand-gold hover:bg-white hover:text-brand-black text-white px-10 py-4 rounded-full transition-all shadow-gold font-bold text-lg uppercase tracking-wider">
+                Hubungi Kami Sekarang
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-white dark:bg-brand-black transition-colors relative">
+        <div class="container mx-auto px-4 md:px-8 max-w-7xl">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                
+                <!-- Contact Info & Map -->
+                <div class="reveal-left">
+                    <span class="text-brand-gold font-medium uppercase tracking-widest text-sm mb-2 block">Hubungi Kami</span>
+                    <h2 class="text-3xl md:text-5xl font-serif font-bold text-brand-black dark:text-white mb-10 leading-tight">
+                        Mari Berdiskusi
+                    </h2>
+                    
+                    <div class="space-y-8 mb-10">
+                        <div class="flex items-start gap-6 group">
+                            <div class="w-12 h-12 rounded-full bg-brand-gray dark:bg-brand-darkbg border border-gray-200 dark:border-brand-lightborder flex items-center justify-center shrink-0 group-hover:border-brand-gold group-hover:bg-brand-gold/10 transition-colors">
+                                <i class="fa-solid fa-location-dot text-brand-gold text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-black dark:text-white mb-2 text-lg tracking-wide">Alamat Kantor</h4>
+                                <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Gedung Otto, Jl. Jend. Sudirman Kav 1,<br>Jakarta Selatan, 12190, Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-6 group">
+                            <div class="w-12 h-12 rounded-full bg-brand-gray dark:bg-brand-darkbg border border-gray-200 dark:border-brand-lightborder flex items-center justify-center shrink-0 group-hover:border-brand-gold group-hover:bg-brand-gold/10 transition-colors">
+                                <i class="fa-solid fa-phone text-brand-gold text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-black dark:text-white mb-2 text-lg tracking-wide">Telepon & WhatsApp</h4>
+                                <p class="text-gray-600 dark:text-gray-400 leading-relaxed">+62 812-3456-7890<br>(021) 555-0123</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-6 group">
+                            <div class="w-12 h-12 rounded-full bg-brand-gray dark:bg-brand-darkbg border border-gray-200 dark:border-brand-lightborder flex items-center justify-center shrink-0 group-hover:border-brand-gold group-hover:bg-brand-gold/10 transition-colors">
+                                <i class="fa-solid fa-envelope text-brand-gold text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-black dark:text-white mb-2 text-lg tracking-wide">Email</h4>
+                                <p class="text-gray-600 dark:text-gray-400 leading-relaxed">hello@ottorealty.co.id</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Google Map Placeholder -->
+                    <div class="h-72 rounded-2xl overflow-hidden shadow-premium map-container border border-gray-100 dark:border-brand-lightborder">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126920.24050212002!2d106.74549508000407!3d-6.2297419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f14d30079f01%3A0x2e74f2341fff266d!2sJakarta%20Selatan%2C%20Kota%20Jakarta%20Selatan%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Lokasi Kantor Otto Realty"></iframe>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-brand-gray dark:bg-brand-darkbg p-8 md:p-12 rounded-3xl shadow-premium reveal-right border border-gray-200 dark:border-white/5 relative overflow-hidden">
+                    <!-- Decorative subtle gradient -->
+                    <div class="absolute -top-24 -right-24 w-48 h-48 bg-brand-gold/20 blur-3xl rounded-full pointer-events-none"></div>
+                    
+                    <h3 class="text-2xl font-serif font-bold text-brand-black dark:text-white mb-8 relative z-10">Kirim Pesan</h3>
+                    <!-- Using a standard custom alert box simulation instead of native alert as per strict instructions -->
+                    <form id="contact-form" class="relative z-10">
+                        <div class="mb-5">
+                            <label class="block text-xs font-semibold text-gray-500 dark:text-gray-400 mb-2 uppercase tracking-wider">Nama Lengkap</label>
+                            <input type="text" required class="w-full px-5 py-4 rounded-xl border border-gray-300 dark:border-brand-lightborder bg-white dark:bg-brand-black text-brand-black dark:text-white focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-shadow">
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-500 dark:text-gray-400 mb-2 uppercase tracking-wider">Nomor HP / WhatsApp</label>
+                                <input type="tel" required class="w-full px-5 py-4 rounded-xl border border-gray-300 dark:border-brand-lightborder bg-white dark:bg-brand-black text-brand-black dark:text-white focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-shadow">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-500 dark:text-gray-400 mb-2 uppercase tracking-wider">Email</label>
+                                <input type="email" class="w-full px-5 py-4 rounded-xl border border-gray-300 dark:border-brand-lightborder bg-white dark:bg-brand-black text-brand-black dark:text-white focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-shadow">
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <label class="block text-xs font-semibold text-gray-500 dark:text-gray-400 mb-2 uppercase tracking-wider">Pesan / Kebutuhan Properti</label>
+                            <textarea rows="5" required class="w-full px-5 py-4 rounded-xl border border-gray-300 dark:border-brand-lightborder bg-white dark:bg-brand-black text-brand-black dark:text-white focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-shadow resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-brand-black dark:bg-white text-white dark:text-brand-black hover:bg-brand-gold dark:hover:bg-brand-gold hover:text-white font-bold py-4 rounded-xl transition-colors uppercase tracking-widest text-sm">
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern Footer -->
+    <footer class="bg-brand-black pt-24 pb-10 border-t border-white/5 relative overflow-hidden">
+        <!-- Background decorative elements -->
+        <div class="absolute -left-40 top-0 w-96 h-96 bg-brand-gold/5 rounded-full blur-3xl pointer-events-none"></div>
+        
+        <div class="container mx-auto px-4 md:px-8 max-w-7xl relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 reveal-fade">
+                <!-- Brand -->
+                <div class="lg:col-span-1">
+                    <a href="#" class="flex items-center gap-2 text-white mb-6">
+                        <span class="text-3xl"><i class="fa-solid fa-building-user text-brand-gold"></i></span>
+                        <span class="font-serif text-2xl font-bold tracking-wider">OTTO</span>
+                    </a>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-8">
+                        Mewujudkan properti impian Anda dengan layanan profesional, transparan, dan terpercaya di seluruh Indonesia.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-brand-gold hover:border-brand-gold transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-brand-gold hover:border-brand-gold transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-brand-gold hover:border-brand-gold transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Menu -->
+                <div>
+                    <h4 class="text-white font-serif font-bold mb-6 text-lg tracking-wide">Menu Utama</h4>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                        <li><a href="#home" class="hover:text-brand-gold transition-colors">Beranda</a></li>
+                        <li><a href="#about" class="hover:text-brand-gold transition-colors">Tentang Kami</a></li>
+                        <li><a href="#properties" class="hover:text-brand-gold transition-colors">Properti Pilihan</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Karir</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Blog & Berita</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-white font-serif font-bold mb-6 text-lg tracking-wide">Layanan</h4>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Beli Properti</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Jual Properti</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Investasi Properti</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Manajemen Aset</a></li>
+                        <li><a href="#" class="hover:text-brand-gold transition-colors">Konsultasi KPR</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="text-white font-serif font-bold mb-6 text-lg tracking-wide">Newsletter</h4>
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">Dapatkan informasi properti terbaru dan penawaran eksklusif langsung di inbox Anda.</p>
+                    <form id="newsletter-form" class="flex flex-col gap-3">
+                        <input type="email" placeholder="Alamat Email Anda" required class="bg-white/5 border border-white/10 text-white rounded-xl px-5 py-3 focus:outline-none focus:border-brand-gold text-sm transition-colors">
+                        <button type="submit" class="bg-brand-gold hover:bg-brand-goldhover text-white rounded-xl px-5 py-3 font-semibold transition-colors text-sm tracking-wide uppercase">Berlangganan</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 reveal-fade">
+                <p class="text-gray-500 text-sm">&copy; 2026 Otto Realty. Hak Cipta Dilindungi.</p>
+                <div class="flex gap-6 text-sm text-gray-500">
+                    <a href="#" class="hover:text-brand-gold transition-colors">Syarat & Ketentuan</a>
+                    <a href="#" class="hover:text-brand-gold transition-colors">Kebijakan Privasi</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Message Box Overlay -->
+    <div id="custom-message-box" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[100] hidden items-center justify-center opacity-0 transition-opacity duration-300 px-4">
+        <div class="bg-white dark:bg-brand-darkbg p-8 rounded-2xl shadow-2xl max-w-sm w-full text-center border border-gray-100 dark:border-brand-lightborder transform scale-95 transition-transform duration-300" id="msg-box-content">
+            <div class="w-16 h-16 bg-brand-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fa-solid fa-check text-2xl text-brand-gold"></i>
+            </div>
+            <h3 class="text-xl font-serif font-bold text-brand-black dark:text-white mb-2" id="msg-title">Sukses</h3>
+            <p class="text-gray-600 dark:text-gray-400 text-sm mb-6" id="msg-text">Tindakan berhasil dilakukan.</p>
+            <button id="close-msg-btn" class="w-full bg-brand-gold hover:bg-brand-goldhover text-white py-3 rounded-xl font-medium transition-colors">Tutup</button>
+        </div>
+    </div>
+
+    <!-- Floating Buttons -->
+    <!-- WhatsApp -->
+    <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 left-6 z-40 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-[0_10px_20px_rgba(37,211,102,0.3)] hover:scale-110 transition-transform duration-300 group">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+        <span class="absolute left-16 bg-white dark:bg-brand-black text-brand-black dark:text-white text-xs font-semibold px-4 py-2 rounded-xl shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none border border-gray-100 dark:border-brand-lightborder">Konsultasi via WA</span>
+    </a>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 z-40 bg-brand-black/80 dark:bg-white/80 backdrop-blur-sm text-white dark:text-brand-black w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 translate-y-10 transition-all duration-300 pointer-events-none hover:bg-brand-gold dark:hover:bg-brand-gold hover:text-white">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // Custom Message Box Functionality
+            const msgBox = document.getElementById('custom-message-box');
+            const msgBoxContent = document.getElementById('msg-box-content');
+            const closeMsgBtn = document.getElementById('close-msg-btn');
+            
+            function showMessage(title, text) {
+                document.getElementById('msg-title').innerText = title;
+                document.getElementById('msg-text').innerText = text;
+                msgBox.classList.remove('hidden');
+                msgBox.classList.add('flex');
+                
+                // Small delay to allow display:flex to apply before transition
+                setTimeout(() => {
+                    msgBox.classList.remove('opacity-0');
+                    msgBoxContent.classList.remove('scale-95');
+                    msgBoxContent.classList.add('scale-100');
+                }, 10);
+            }
+
+            function hideMessage() {
+                msgBox.classList.add('opacity-0');
+                msgBoxContent.classList.remove('scale-100');
+                msgBoxContent.classList.add('scale-95');
+                setTimeout(() => {
+                    msgBox.classList.add('hidden');
+                    msgBox.classList.remove('flex');
+                }, 300);
+            }
+            
+            closeMsgBtn.addEventListener('click', hideMessage);
+
+            // Handle Forms
+            document.getElementById('contact-form').addEventListener('submit', (e) => {
+                e.preventDefault();
+                showMessage('Pesan Terkirim', 'Terima kasih. Tim kami akan segera menghubungi Anda.');
+                e.target.reset();
+            });
+
+            document.getElementById('newsletter-form').addEventListener('submit', (e) => {
+                e.preventDefault();
+                showMessage('Berlangganan Sukses', 'Terima kasih telah berlangganan newsletter Otto Realty.');
+                e.target.reset();
+            });
+
+
+            // 1. Loader Logic (Smooth fade out)
+            const loader = document.getElementById('loader');
+            window.onload = () => {
+                setTimeout(() => {
+                    loader.style.opacity = '0';
+                    setTimeout(() => {
+                        loader.style.display = 'none';
+                        initScrollAnimations(); // Trigger initial check after load
+                    }, 500);
+                }, 800); // Slight delay for premium feel
+            };
+
+            // 2. Transparent to Solid Sticky Navbar & Back to Top
+            const navbar = document.getElementById('navbar');
+            const bttBtn = document.getElementById('back-to-top');
+            
+            const handleScroll = () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('bg-brand-black/95', 'backdrop-blur-md', 'shadow-lg');
+                    navbar.classList.remove('py-4');
+                    navbar.classList.add('py-3');
+                } else {
+                    navbar.classList.remove('bg-brand-black/95', 'backdrop-blur-md', 'shadow-lg');
+                    navbar.classList.add('py-4');
+                    navbar.classList.remove('py-3');
+                }
+
+                if (window.scrollY > 600) {
+                    bttBtn.classList.remove('opacity-0', 'translate-y-10', 'pointer-events-none');
+                } else {
+                    bttBtn.classList.add('opacity-0', 'translate-y-10', 'pointer-events-none');
+                }
+            };
+            window.addEventListener('scroll', handleScroll, { passive: true });
+            
+            bttBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // 3. Mobile Menu Toggle
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const closeMenuBtn = document.getElementById('close-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            const toggleMenu = () => {
+                const isOpen = !mobileMenu.classList.contains('translate-x-full');
+                if (isOpen) {
+                    mobileMenu.classList.add('translate-x-full');
+                    document.body.style.overflow = '';
+                } else {
+                    mobileMenu.classList.remove('translate-x-full');
+                    document.body.style.overflow = 'hidden'; // Prevent scrolling when menu open
+                }
+            };
+
+            mobileMenuBtn.addEventListener('click', toggleMenu);
+            closeMenuBtn.addEventListener('click', toggleMenu);
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', toggleMenu);
+            });
+
+            // 4. Dark Mode Toggle with LocalStorage
+            const themeToggleBtn = document.getElementById('theme-toggle');
+            const mobileThemeToggle = document.getElementById('mobile-theme-toggle');
+            const html = document.documentElement;
+            
+            // Check saved theme
+            if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                html.classList.add('dark');
+            } else {
+                html.classList.remove('dark');
+            }
+
+            const toggleTheme = () => {
+                if (html.classList.contains('dark')) {
+                    html.classList.remove('dark');
+                    localStorage.theme = 'light';
+                } else {
+                    html.classList.add('dark');
+                    localStorage.theme = 'dark';
+                }
+            };
+
+            themeToggleBtn.addEventListener('click', toggleTheme);
+            mobileThemeToggle.addEventListener('click', toggleTheme);
+
+            // 5. Intersection Observer for Scroll Animations
+            const animationOptions = {
+                threshold: 0.15,
+                rootMargin: "0px 0px -50px 0px"
+            };
+
+            const animationObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target); // Only animate once
+                    }
+                });
+            }, animationOptions);
+
+            function initScrollAnimations() {
+                const animatedElements = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right, .reveal-fade');
+                animatedElements.forEach(el => animationObserver.observe(el));
+            }
+
+            // 6. Number Counter Animation (Triggered on scroll)
+            const counters = document.querySelectorAll('.counter');
+            let hasCounted = false;
+
+            const counterObserver = new IntersectionObserver((entries, observer) => {
+                if(entries[0].isIntersecting && !hasCounted) {
+                    hasCounted = true;
+                    counters.forEach(counter => {
+                        const target = +counter.getAttribute('data-target');
+                        const duration = 2500; // ms
+                        const increment = target / (duration / 16); 
+                        
+                        let current = 0;
+                        const updateCounter = () => {
+                            current += increment;
+                            if (current < target) {
+                                counter.innerText = Math.ceil(current);
+                                requestAnimationFrame(updateCounter);
+                            } else {
+                                counter.innerText = target;
+                            }
+                        };
+                        updateCounter();
+                    });
+                    observer.unobserve(entries[0].target);
+                }
+            }, { threshold: 0.6 });
+            
+            const aboutSection = document.getElementById('about');
+            if(aboutSection) counterObserver.observe(aboutSection);
+
+            // 7. Swiper Initialization (Testimonial & Partner)
+            const testimonialSwiper = new Swiper('.testimonial-swiper', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                breakpoints: {
+                    768: { slidesPerView: 2 },
+                    1024: { slidesPerView: 3 },
+                },
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
+                grabCursor: true,
+            });
+
+            const partnerSwiper = new Swiper('.partner-swiper', {
+                slidesPerView: 2,
+                spaceBetween: 40,
+                loop: true,
+                speed: 4000,
+                autoplay: {
+                    delay: 0,
+                    disableOnInteraction: false,
+                },
+                breakpoints: {
+                    480: { slidesPerView: 3 },
+                    768: { slidesPerView: 4 },
+                    1024: { slidesPerView: 5 },
+                },
+                allowTouchMove: false, // Continuous ticker effect
+            });
+            
+            // Fallback for animation init if window.onload misses
+            setTimeout(initScrollAnimations, 1500);
+        });
+    </script>
+</body>
+</html>

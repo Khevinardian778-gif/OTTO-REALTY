@@ -1198,17 +1198,21 @@ method="POST">
             closeMsgBtn.addEventListener('click', hideMessage);
 
             // Handle Forms
-            const contactForm = document.getElementById('contactForm');
+            // Handle Forms
+const contactForm = document.getElementById('contactForm');
 
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
-        // kode form kamu di sini
+        e.preventDefault();
+
+        showMessage(
+            'Pesan Terkirim',
+            'Terima kasih. Tim kami akan segera menghubungi Anda.'
+        );
+
+        e.target.reset();
     });
 }
-                e.preventDefault();
-                showMessage('Pesan Terkirim', 'Terima kasih. Tim kami akan segera menghubungi Anda.');
-                e.target.reset();
-            });
 
             document.getElementById('newsletter-form').addEventListener('submit', (e) => {
                 e.preventDefault();
